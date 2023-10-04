@@ -1,0 +1,42 @@
+<script v2 id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="9b708e7f-0173-4c91-8791-efc014688172" data-lcw-version="prod" data-org-id="300bfd70-9367-43fb-a9dc-4909c997c9a9" data-org-url="https://unq300bfd70936743fba9dc4909c997c-crm.omnichannelengagementhub.com" data-suggested-action-layout="stacked"></script>
+
+<script>
+function contextProvider() {
+
+   return {
+
+      'Name': {'value': 'Mark Reaume', 'isDisplayable': true},
+
+      'AccountId': {'value': 'a618c621-7c10-e211-950a-d067e5f12fd2', 'isDisplayable': true},
+
+      'ContactId': {'value': '140fd0a2-2520-ec11-b6e6-0022482468c3', 'isDisplayable': true},
+
+      'EmailAddress': {'value': 'mreaume@commvault.com', 'isDisplayable': true},
+
+      'Channel': {'value': 'Metallic SaaS', 'isDisplayable': true},
+
+      'PortalName': {'value': 'Metallic', 'isDisplayable': true},
+
+      'Commcell': {'value': '0', 'isDisplayable': true},
+
+      'HasOnPrem': {'value': false, 'isDisplayable': false},
+
+       'HasSaaS': {'value': true, 'isDisplayable': false}
+
+      };
+
+ 
+
+}
+
+ 
+
+async function openForm() {
+
+    await Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
+
+    await Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
+
+}
+
+</script>
